@@ -2,4 +2,4 @@
 
 ## Pattern 5
 
-![Pattern 1 image](image.png)
+![Pattern 1 image](./assets/image.png)
