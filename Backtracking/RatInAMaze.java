@@ -1,6 +1,6 @@
 package Backtracking;
 
-public class Backtracking {
+public class RatInAMaze {
     public static void main(String[] args) {
         int[][] mat = {
                 { 1, 1, 1, 0 },
@@ -18,15 +18,6 @@ public class Backtracking {
 
     }
 
-    /**
-     * @param mat
-     * @param visited
-     * @param i
-     * @param j
-     * @param path
-     * @param n
-     * @param m
-     */
     static void ratMaze(int mat[][], boolean visited[][], int i, int j, String path, int n, int m) {
         if (i == (n - 1) && j == (m - 1)) {
             System.out.println(path);
