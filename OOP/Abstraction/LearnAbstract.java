@@ -2,7 +2,7 @@ package OOP.Abstraction;
 
 public class LearnAbstract {
 
-    // Vehicle car = new Vehicle();
+    Vehicle car = new Car();
 
 }
 
@@ -23,7 +23,7 @@ class Car extends Vehicle {
 
     @Override
     void accelerate() {
-        // TODO Auto-generated method stub
+
         throw new UnsupportedOperationException("Unimplemented method 'accelerate'");
     }
 
