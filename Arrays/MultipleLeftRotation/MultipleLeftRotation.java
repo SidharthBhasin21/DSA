@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.MultipleLeftRotation;
 
 import java.util.Arrays;
 
