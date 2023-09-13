@@ -49,7 +49,7 @@ public ArrayList<Integer> wave(ArrayList<Integer> A) {
 
 ```
 
-## _But if it is given no answer without the lexological order_
+## _But if it is given to answer without the lexological order_
 
 ```Java
 
