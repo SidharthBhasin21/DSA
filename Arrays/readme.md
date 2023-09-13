@@ -6,6 +6,80 @@ Given an array of integers A and multiple values in B, which represents the numb
 Find the rotated array for each value and return the result in a matrix where the ith row represents the rotated array for the ith value in B.
 After every rotation, array A becomes equal to the original.
 
+Example 1:
+
+> Input:
+
+```
+5 2
+
+1 2 3 4 5
+
+2 3
+
+```
+
+> Output:
+
+```
+[[3, 4, 5, 1, 2], [4, 5, 1, 2, 3]]
+
+```
+
+> Explanation
+
+```
+
+B[0] = 2 which requires 2 times left rotations
+
+1: [2, 3, 4, 5, 1]
+
+2: [3, 4, 5, 1, 2]
+
+
+
+B[1] = 3 which requires 3 times left rotation
+
+1: [2, 3, 4, 5, 1]
+
+2: [3, 4, 5, 1, 2]
+
+2: [4, 5, 1, 2, 3]
+
+```
+
+> Example 2:
+
+> Input:
+
+```
+4 1
+
+5 17 100 11
+
+1
+
+```
+
+> Output:
+
+```
+[[17, 100, 11, 5]]
+```
+
+> Constraints:
+
+```
+1 <= N <= 2 \* 103
+
+1 <= M <= 2 \* 103
+
+-109 <= A[i] <= 109
+
+0 <= B[j] <= 2000
+
+```
+
 # Answer
 
 > Brute force for single rotation k times to the left
