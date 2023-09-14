@@ -1,6 +1,10 @@
 # Minimum Difference
 
-## Problem Statement `Medium`
+`Medium`
+
+> Amazon, Citadel, DE Shaw
+
+## Problem Statement
 
 ### Given an array of distinct integers, find all pairs of elements where the difference between the two elements is the smallest among all pairs in the array. Return these pairs in ascending order, where each pair is represented by [a, b], such that a, b are elements from the array and a < b. The difference between a and b should be the smallest possible.
 

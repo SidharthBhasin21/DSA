@@ -1,5 +1,7 @@
 # Maximum Absolute Difference
 
+`Medium`
+
 > Adobe, Cisco, Etsy
 
 ## Problem Statement

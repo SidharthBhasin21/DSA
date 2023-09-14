@@ -1,5 +1,7 @@
 # 2 Sum
 
+`Easy`
+
 > Amazon ,Expedia, Goldman Sachs
 
 ## Problem Statement
