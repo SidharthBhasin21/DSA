@@ -50,39 +50,19 @@ Output:
 ## Solution
 
 ```java
-public static List<List<Integer>> findPair(int[] arr)
-    {
-
-      List<List<Integer>> ans = new ArrayList<>();
-      int n = arr.length;
-      int[] a = Arrays.copyOf(arr,n);
-      for(int i=0; i<n; i++){
-        for(int j=i+1; j<n ; j++){
-        if(exist(a , arr[i] + arr[j], n)){
-
-          ans.add(new ArrayList<>(Arrays.asList(arr[i],arr[j])));
-        }
-        }
-      }
-       ans.sort((x, y) -> {
-            int minLen = Math.min(x.size(), y.size());
-            for (int i = 0; i < minLen; i++) {
-                int cmp = x.get(i).compareTo(y.get(i));
-                if (cmp != 0) {
-                    return cmp;
-                }
+public static List<Integer> find123Digits(int[] arr,int n) {
+        List<Integer> ans = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            if (contains123(arr[i])) {
+                ans.add(arr[i]);
             }
-            return Integer.compare(x.size(), y.size());
-        });
-      return ans;
-
+        }
+        Collections.sort(ans);
+        return ans;
     }
-    public static boolean exist(int [] arr, int sum, int n){
-      for(int i=0; i<n; i++){
-        if(arr[i] == sum)
-          return true;
-      }
-      return false;
+    private static boolean contains123(int num) {
+        String str = Integer.toString(num);
+        return str.contains("1") && str.contains("2") && str.contains("3");
     }
 
 ```

@@ -11,7 +11,7 @@ public class find123Digits {
 
     public static void main(String[] args) {
         int[] arr = { 321, 123, 89, 32, 11 };
-        System.out.println(find123Digits(arr));
+        System.out.println(find123Digits(arr, 5));
     }
 
     public static List<Integer> find123Digits(int[] arr, int n) {
