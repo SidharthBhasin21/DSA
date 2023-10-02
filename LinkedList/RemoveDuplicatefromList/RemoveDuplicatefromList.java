@@ -7,8 +7,22 @@ public class RemoveDuplicatefromList {
 
     public ListNode deleteDuplicates(ListNode head) {
 
+        ListNode origin = head;
         ListNode temp = head;
-
+        ListNode newHead = null;
+        
+        while(origin != null){
+            while(origin.next != null && origin.val == origin.next.val ){
+               origin  = origin.next;
+            }
+            if(newHead == null) newHead = temp = origin;
+            else {
+                temp.next = origin;
+                temp = origin;
+            }
+            origin = origin.next;
+        }
+        return newHead;
     }
 
     class ListNode {
