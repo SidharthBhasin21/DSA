@@ -1,15 +1,15 @@
 package LinkedList.MiddleNodeLL;
 
-import LinkedList.Node;
+import LinkedList.ListNode;
 
 public class MiddleNode {
     public static void main(String[] args) {
 
     }
 
-    public static Node middleNode(Node head) {
-        Node s = head;
-        Node f = head;
+    public static ListNode middleNode(ListNode head) {
+        ListNode s = head;
+        ListNode f = head;
 
         while (f != null && f.next != null) {
             s = s.next;

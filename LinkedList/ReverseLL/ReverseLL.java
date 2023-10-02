@@ -5,7 +5,7 @@ public class ReverseLL {
 
     }
 
-    public static ListNode reverseList(ListNode head) {
+    public static ListNode reverse(ListNode head) {
         if (head == null || head.next == null)
             return head;
 
@@ -22,6 +22,18 @@ public class ReverseLL {
 
         }
         return prev;
+
+    }
+    public static ListNode reverseList(ListNode head){
+        if (head == null || head.next == null)
+            return head;
+
+        ListNode headofSub = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return headofSub;
+        
 
     }
 }
