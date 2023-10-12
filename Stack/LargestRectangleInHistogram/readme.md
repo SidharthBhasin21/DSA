@@ -19,7 +19,7 @@ Output:
 
 10
 
-!["Explaination"](https:// https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
+!["Explaination"](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
 
 Explanation:
 
@@ -38,7 +38,7 @@ heights = [2 , 4]
 Output:
 4
 
-!["Explaination"](https:// https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
+!["Explaination"](https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
 
 Explanation: The largest rectangle is formed by the bars with height 3, 4 and 5 , each will give height 3 to the rectangle. Thus area of the rectangle is 9.
 ```
